@@ -45,8 +45,11 @@ function evalExpr(nb1, nb2, nbs) {
     }
     else if (nbs == "/") {
         result = nb1 / nb2;
+        if (nb1 == 0 || nb2 == 0 || nb2 == 0 && nb1 == 0){
+            result = "impossible";
+        }
     }
     return result;
 
 }
-console.log(evalExpr(35, 5, "/"));
+console.log(evalExpr(10, 0, "/"));
