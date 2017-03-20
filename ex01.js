@@ -27,3 +27,26 @@
 */
 
 // write your code below this comment
+
+function evalExpr(nb1, nb2, nbs) {
+    var result = 0;
+
+    if (nbs == "*") {
+        result =  nb1 * nb2;
+    }
+    else if (nbs == "+") {
+        result = nb1 + nb2;
+    }
+    else if (nbs == "%") {
+        result = nb1 % nb2;
+    }
+    else if (nbs == "-") {
+        result = nb1 - nb2;
+    }
+    else if (nbs == "/") {
+        result = nb1 / nb2;
+    }
+    return result;
+
+}
+console.log(evalExpr(35, 5, "/"));
