@@ -20,3 +20,26 @@
 */
 
 // write your code below this comment
+
+
+
+var temp = window.prompt('type c for celsius or f for farenheight')
+
+function getRandomIntInclusive(min, max) {
+    if (temp.toLowerCase() == "c") {
+        min = Math.ceil(0);
+        max = Math.floor(1000);
+        var number = (Math.floor(Math.random() * (max - min + 1)) + min)
+        alert(number + ' farenheight = ' + ((number -32) / (1.8)) + " celcius");
+
+    } else if (temp.toLowerCase() == "f") {
+        min = Math.ceil(0);
+        max = Math.floor(1000);
+        var number = (Math.floor(Math.random() * (max - min + 1)) + min)
+        alert(number + ' celsius = ' + ((number *1.8) + (32)) + " farenheight");
+
+    }
+
+} console.log(getRandomIntInclusive())
+
+
