@@ -14,3 +14,19 @@
 */
 
 // write your code below this comment
+function findSumByMultiples(nb1, nb2, nb3) {
+    var multiples = [];
+    var sum = 0;
+
+    for (let i = 0; i <= nb3; i++) {
+        if (i % nb1 == 0 || i % nb2 == 0) {
+            multiples.push(i)
+        }
+    }
+    for (j in multiples) {
+        sum = sum + multiples[j];
+    }
+
+    return sum
+}
+console.log(findSumByMultiples(3, 5, 1000));
