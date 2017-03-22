@@ -21,3 +21,27 @@
 */
 
 // write your code below this comment
+function numberToPrice(number) {
+
+    let result = number.toFixed(2);
+    if (number < 0) {
+        return 0;
+    }
+    else {
+        return result.replace(".", ",") + "€";
+    }
+}
+
+
+console.log(numberToPrice(4));
+
+function priceToNumber(price) {
+    if (price == ""){
+        return "empty string"
+    }
+    else{
+    let result = price.replace(",", ".");
+    return result.substring(0, result.length - 1);
+    }
+}
+console.log(priceToNumber("4,59€"))

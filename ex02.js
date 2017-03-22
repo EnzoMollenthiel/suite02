@@ -40,6 +40,6 @@ function getRandomIntInclusive(min, max) {
 
     }
 
-} console.log(getRandomIntInclusive())
+} 
 
 
